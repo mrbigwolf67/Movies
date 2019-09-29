@@ -1,0 +1,9 @@
+
+<nav>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active" > <h1>{{title$ | async}} </h1></a>
+  <div>
+    <button [routerLink]="['/movies/add']" routerLinkActive="router-link-active" *ngIf="router.url.includes('movies/') && !router.url.includes('movies/add')" >Ändra</button>
+    <button (click)="deleteMovie()" *ngIf="router.url.includes('movies/') && !router.url.includes('movies/add')" >Ta bort</button>
+</div>
+    <button [routerLink]="['/movies/add']" routerLinkActive="router-link-active" *ngIf="!router.url.includes('movies/add')" >Lägg till</button>
+</nav>

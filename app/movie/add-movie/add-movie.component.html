@@ -1,0 +1,8 @@
+<form [formGroup]="movieForm" (ngSubmit)="addMovie()">
+  <input type="text" placeholder="Filmtitel" formControlName="name">
+  <input type="text" placeholder="Bildens URL" formControlName="image">
+  <input type="text" placeholder="Genre" formControlName="genre">
+  <input type="text" placeholder="År då filmen släptes" formControlName="year">
+
+  <button [disabled]="!movieForm.valid" type="submit" role="button">Lägg till film</button>
+</form>

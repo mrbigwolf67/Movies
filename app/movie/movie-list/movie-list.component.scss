@@ -1,0 +1,33 @@
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+// ul {
+//   display: flex;
+//   // flex-wrap: wrap;
+//   width: 400px;
+//   margin: 0px;
+//   padding: 20px 20px;
+//   justify-content: center;
+// }
+
+// li {
+//   flex: 1;
+//   margin: 10px;
+//   width: 400px;
+// }
+
+// img {
+//   max-width: 200px;
+//   height: 400px;
+//   object-fit: cover;
+// }
+
